@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Projet Carcassonne: Variables globale</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Carcassonne
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de l&#39;implémentation du jeu de société carcassonne</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li class="current"><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="globals.html"><span>Tout</span></a></li>
+      <li class="current"><a href="globals_func.html"><span>Fonctions</span></a></li>
+      <li><a href="globals_eval.html"><span>Valeurs&#160;énumérées</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_j"><span>j</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>a_qui_le_tour()
+: <a class="el" href="regles_8c.html#a81a0cd6b8ce92aab28942b41d07e8bf0">regles.c</a>
+, <a class="el" href="regles_8h.html#a81a0cd6b8ce92aab28942b41d07e8bf0">regles.h</a>
+</li>
+<li>affichage()
+: <a class="el" href="affichage_8h.html#a69003835a897bfb2d67cb226136e10ed">affichage.h</a>
+, <a class="el" href="affichage_8c.html#a4d0e74aa7fdd056f1f1b1297fb28e780">affichage.c</a>
+</li>
+<li>ajout_arete()
+: <a class="el" href="graph_8c.html#ab36c963c877e70525fe648b2bf613891">graph.c</a>
+, <a class="el" href="graph_8h.html#ab36c963c877e70525fe648b2bf613891">graph.h</a>
+</li>
+<li>ajout_sommet()
+: <a class="el" href="graph_8h.html#ae6969ad94474b8dc781cd0aa940d3e7e">graph.h</a>
+, <a class="el" href="graph_8c.html#ae6969ad94474b8dc781cd0aa940d3e7e">graph.c</a>
+</li>
+<li>ajout_succ_chaine()
+: <a class="el" href="graph_8h.html#ab7ff2a0308247047640dffcedbc2bb6a">graph.h</a>
+, <a class="el" href="graph_8c.html#ab7ff2a0308247047640dffcedbc2bb6a">graph.c</a>
+</li>
+<li>ajouter_tuile_graphe_global()
+: <a class="el" href="graph_8c.html#a5efd1b15095ee5480d7cfb225fdcab99">graph.c</a>
+, <a class="el" href="graph_8h.html#a5efd1b15095ee5480d7cfb225fdcab99">graph.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>calcul_pions_possibles()
+: <a class="el" href="jeu_8c.html#a4079b4b86b2945314a2dcac9d0ee295d">jeu.c</a>
+</li>
+<li>calcul_pos_curseur_pion()
+: <a class="el" href="affichage_8c.html#aba73bd3570178c1a81db464b0535b2bc">affichage.c</a>
+, <a class="el" href="affichage_8h.html#aba73bd3570178c1a81db464b0535b2bc">affichage.h</a>
+</li>
+<li>calcul_pos_curseur_tuile()
+: <a class="el" href="affichage_8c.html#a1688b0122e0da85d3d259eb39b2c3157">affichage.c</a>
+, <a class="el" href="affichage_8h.html#a1688b0122e0da85d3d259eb39b2c3157">affichage.h</a>
+</li>
+<li>calcul_score()
+: <a class="el" href="affichage_8c.html#af406e6712cf621bfe5275bcbfc4022c4">affichage.c</a>
+</li>
+<li>calcul_score_pions()
+: <a class="el" href="regles_8h.html#a05edfb6cf709936a3890a0f4d8c3603a">regles.h</a>
+, <a class="el" href="regles_8c.html#a05edfb6cf709936a3890a0f4d8c3603a">regles.c</a>
+</li>
+<li>calcul_visible()
+: <a class="el" href="jeu_8h.html#abd71800d0f379c2c22bd4cbbdbcd19bb">jeu.h</a>
+, <a class="el" href="jeu_8c.html#abd71800d0f379c2c22bd4cbbdbcd19bb">jeu.c</a>
+</li>
+<li>compter_points_ville_route()
+: <a class="el" href="regles_8c.html#a4dd78773fe4755d0f1077361c9a36acb">regles.c</a>
+, <a class="el" href="regles_8h.html#a4dd78773fe4755d0f1077361c9a36acb">regles.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>dernier_successeur()
+: <a class="el" href="graph_8c.html#a32ccc11653048f2e3c1e6dc8c94e8959">graph.c</a>
+, <a class="el" href="graph_8h.html#ac447345901638c4c1b05d4c23c66b57a">graph.h</a>
+</li>
+<li>dupliquer_tuiles()
+: <a class="el" href="tuiles_8c.html#a960ee8608dbc52ae2be1856ec12d2eb3">tuiles.c</a>
+, <a class="el" href="tuiles_8h.html#a3074a1401285af01ffe02371457c2597">tuiles.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>est_compatible_routes()
+: <a class="el" href="plateau_8c.html#a41cef408480e45ec602573385f320ac1">plateau.c</a>
+, <a class="el" href="plateau_8h.html#a41cef408480e45ec602573385f320ac1">plateau.h</a>
+</li>
+<li>est_compatible_villes()
+: <a class="el" href="plateau_8h.html#a9657eac3706ebe2a88717a5fada7c099">plateau.h</a>
+, <a class="el" href="plateau_8c.html#a9657eac3706ebe2a88717a5fada7c099">plateau.c</a>
+</li>
+<li>est_fin_pioche()
+: <a class="el" href="plateau_8c.html#a4e374991626b1ff4481c7d15f496acfb">plateau.c</a>
+, <a class="el" href="plateau_8h.html#a4e374991626b1ff4481c7d15f496acfb">plateau.h</a>
+</li>
+<li>est_pion()
+: <a class="el" href="regles_8h.html#a04f9379ad8ccfdf4d5a912d302844c2e">regles.h</a>
+, <a class="el" href="regles_8c.html#a04f9379ad8ccfdf4d5a912d302844c2e">regles.c</a>
+</li>
+<li>est_poser_pion_possi()
+: <a class="el" href="regles_8h.html#a677d2f1ebcd746423cd870e8eb12692a">regles.h</a>
+, <a class="el" href="regles_8c.html#a677d2f1ebcd746423cd870e8eb12692a">regles.c</a>
+</li>
+<li>est_route_champ_complet()
+: <a class="el" href="regles_8c.html#a1f59955f6f66b9748e408f532a04dfc2">regles.c</a>
+, <a class="el" href="regles_8h.html#a1f59955f6f66b9748e408f532a04dfc2">regles.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>free_graphe()
+: <a class="el" href="graph__tuiles_8c.html#a808bdcc42e930974f0115017e2b41b25">graph_tuiles.c</a>
+, <a class="el" href="graph__tuiles_8h.html#a808bdcc42e930974f0115017e2b41b25">graph_tuiles.h</a>
+</li>
+<li>free_graphe_global()
+: <a class="el" href="graph_8h.html#a0e48e82d01aedfbe78f03a18ea45f8f9">graph.h</a>
+, <a class="el" href="graph_8c.html#ac9fe15292c689435779343cf717579cb">graph.c</a>
+</li>
+<li>free_joueurs()
+: <a class="el" href="regles_8c.html#a8e73b0b9c3053e7d86657fad74e77148">regles.c</a>
+, <a class="el" href="regles_8h.html#a8e73b0b9c3053e7d86657fad74e77148">regles.h</a>
+</li>
+<li>free_pioche()
+: <a class="el" href="plateau_8h.html#a52015ed628aab600df7eee950422eaf7">plateau.h</a>
+, <a class="el" href="plateau_8c.html#a52015ed628aab600df7eee950422eaf7">plateau.c</a>
+</li>
+<li>free_plateau()
+: <a class="el" href="plateau_8c.html#aa924cb8ebab76f7d9e79179f6ec866f5">plateau.c</a>
+, <a class="el" href="plateau_8h.html#aa924cb8ebab76f7d9e79179f6ec866f5">plateau.h</a>
+</li>
+<li>free_sommet()
+: <a class="el" href="graph__tuiles_8c.html#a0a822642e38618c7d8ae57078234dba9">graph_tuiles.c</a>
+, <a class="el" href="graph__tuiles_8h.html#a0a822642e38618c7d8ae57078234dba9">graph_tuiles.h</a>
+</li>
+<li>free_successeur()
+: <a class="el" href="graph_8c.html#a80efd35df7373ab91ee0fd729f5f145b">graph.c</a>
+, <a class="el" href="graph_8h.html#a80efd35df7373ab91ee0fd729f5f145b">graph.h</a>
+</li>
+<li>free_tuiles()
+: <a class="el" href="tuiles_8c.html#abfcf74be7de958c5ee3fb47a1605b948">tuiles.c</a>
+, <a class="el" href="tuiles_8h.html#abfcf74be7de958c5ee3fb47a1605b948">tuiles.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>init_graphe()
+: <a class="el" href="graph__tuiles_8c.html#a40acb846cd5c8c460c1e5215eb5fa23f">graph_tuiles.c</a>
+, <a class="el" href="graph__tuiles_8h.html#aa475c51950bc456e14547725df926756">graph_tuiles.h</a>
+</li>
+<li>init_graphe_global()
+: <a class="el" href="graph_8h.html#adc9bdac5bed30867e29dbbb5aeb7c3f1">graph.h</a>
+, <a class="el" href="graph_8c.html#ae40f24bdbdff32211ff5d78a9de423ac">graph.c</a>
+</li>
+<li>init_parcourt_graphe()
+: <a class="el" href="graph_8c.html#aae9c50cb72f663d2199474ef85233378">graph.c</a>
+, <a class="el" href="graph_8h.html#aae9c50cb72f663d2199474ef85233378">graph.h</a>
+</li>
+<li>init_pioche()
+: <a class="el" href="plateau_8h.html#a3912a113773009d3f4ef7d9a4b835425">plateau.h</a>
+, <a class="el" href="plateau_8c.html#a3912a113773009d3f4ef7d9a4b835425">plateau.c</a>
+</li>
+<li>init_sommet()
+: <a class="el" href="graph__tuiles_8c.html#ad1a5fc07d63ce9b846a7d6f188df1d58">graph_tuiles.c</a>
+, <a class="el" href="graph__tuiles_8h.html#a81b6d0b61af6a6f339a6dd062f1e8719">graph_tuiles.h</a>
+</li>
+<li>init_tuile()
+: <a class="el" href="tuiles_8c.html#acbb9b119c131f6555b032e9152fe9833">tuiles.c</a>
+, <a class="el" href="tuiles_8h.html#a1e6e506af46647677f63ab0a92ed93e7">tuiles.h</a>
+</li>
+<li>initialise_joueurs()
+: <a class="el" href="regles_8c.html#ac3e9e250641010eeb58a50b9f9beace6">regles.c</a>
+, <a class="el" href="regles_8h.html#a885d432b106969dd75156c9c89dbd891">regles.h</a>
+</li>
+<li>initialise_plateau()
+: <a class="el" href="plateau_8c.html#a458dff6a792b1a5e9e103ed54f9bdd53">plateau.c</a>
+, <a class="el" href="plateau_8h.html#a458dff6a792b1a5e9e103ed54f9bdd53">plateau.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_j"></a>- j -</h3><ul>
+<li>jeu()
+: <a class="el" href="jeu_8c.html#ad9f30d36c0a70221acb362452afc38b8">jeu.c</a>
+, <a class="el" href="jeu_8h.html#ad9f30d36c0a70221acb362452afc38b8">jeu.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>main()
+: <a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main.c</a>
+</li>
+<li>marquer_sommet_termine()
+: <a class="el" href="regles_8h.html#a46565c853d970ffeb153aa74e3ee1577">regles.h</a>
+, <a class="el" href="regles_8c.html#a46565c853d970ffeb153aa74e3ee1577">regles.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>parcourt_graphe_global()
+: <a class="el" href="graph_8c.html#a0cb229ec6ebdfbf51442559dc6f9399c">graph.c</a>
+, <a class="el" href="graph_8h.html#a0cb229ec6ebdfbf51442559dc6f9399c">graph.h</a>
+</li>
+<li>piocher()
+: <a class="el" href="jeu_8h.html#a07c1761c22bc8cb03dbc47adde3bea7d">jeu.h</a>
+, <a class="el" href="jeu_8c.html#a07c1761c22bc8cb03dbc47adde3bea7d">jeu.c</a>
+</li>
+<li>poser_pion()
+: <a class="el" href="regles_8c.html#a2aa3b05de1dda9065ae0c268ce2eb68c">regles.c</a>
+, <a class="el" href="regles_8h.html#a2aa3b05de1dda9065ae0c268ce2eb68c">regles.h</a>
+</li>
+<li>poser_tuile()
+: <a class="el" href="plateau_8c.html#a06b902070258b9a81f6d96b429c6732b">plateau.c</a>
+, <a class="el" href="plateau_8h.html#a06b902070258b9a81f6d96b429c6732b">plateau.h</a>
+</li>
+<li>position_tuiles_voisines()
+: <a class="el" href="plateau_8h.html#a3594239d6add9444d6d4cda3089e7910">plateau.h</a>
+, <a class="el" href="plateau_8c.html#af6666c44279f16466658c8815bb1904a">plateau.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>rotation_visible()
+: <a class="el" href="jeu_8c.html#aeb04d529f991652e424be8f4e0168659">jeu.c</a>
+, <a class="el" href="jeu_8h.html#aeb04d529f991652e424be8f4e0168659">jeu.h</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>supprimer_pion()
+: <a class="el" href="regles_8c.html#afdca0feecb05ea33f1b1c3773b4848c1">regles.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>tuile_parseur()
+: <a class="el" href="tuiles_8c.html#a9fa36f0acd940ca1c293d0395047a1c5">tuiles.c</a>
+, <a class="el" href="tuiles_8h.html#a9fa36f0acd940ca1c293d0395047a1c5">tuiles.h</a>
+</li>
+<li>tuile_rotation()
+: <a class="el" href="tuiles_8h.html#ad7c3f121d4fc3a6e93aa8fc2ed41398a">tuiles.h</a>
+, <a class="el" href="tuiles_8c.html#a034d99035ccf31856f3a3043ab88a74f">tuiles.c</a>
+</li>
+<li>tuiles_compatibles()
+: <a class="el" href="plateau_8h.html#abb935af27081877dec0bca9b0abed51b">plateau.h</a>
+, <a class="el" href="plateau_8c.html#abb935af27081877dec0bca9b0abed51b">plateau.c</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>update_graphe_global()
+: <a class="el" href="graph_8c.html#a40d417e7299348dc5ff6ce9211c85ceb">graph.c</a>
+, <a class="el" href="graph_8h.html#a40d417e7299348dc5ff6ce9211c85ceb">graph.h</a>
+</li>
+<li>update_pioche()
+: <a class="el" href="plateau_8c.html#a703a386027aca9c25f0f3d96c499b4b7">plateau.c</a>
+, <a class="el" href="plateau_8h.html#a703a386027aca9c25f0f3d96c499b4b7">plateau.h</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Mai 5 2013 23:41:55 pour Projet Carcassonne par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

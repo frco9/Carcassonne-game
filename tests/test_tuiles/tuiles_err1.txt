@@ -1,0 +1,15 @@
+#Définition des tuiles par lecture via parseur de ce fichier
+#Une tuile  est définie par un 3 tableaux de sommets et 3 matrices de booléens
+#Les tableaux de sommets sont ici définis par des séquences commençant et finissant par * sur une seule ligne.
+#Ces séquences commencent par le numéro de la tuile puis sont composées de sous séquences délimitées par une lettre (c=champ, r=route, v=ville, m=monaster) et composées d'une suite de quatre chiffres binaires où 1 représente un sommet activé et 0 l'inverse.
+
+#Les matrices de booléens sont ici définies par des séquences commençant et finissant par % sur une seule ligne.
+#Ces séquences commencent par le numéro de la tuile puis sont composées de sous-séquences délimités par une lettre (c=champ, r=route, v=ville, m=monastère) et composées d'une suite de 3 entiers le premier étant le numéro de ligne dans [0,2], le second le numéro de colonne dans [1,3] et le dernier la valeur du booléen (0 ou 1)
+ 
+#Les espaces ne sont pas pris en compte. Par défaut tout les sommets sont désactives si  une séquence n'est pas renseigné, elle sera initialisé à 0000.
+#Les commentaires sont délimites par "dièse" et la fin de la ligne
+
+#Enfin tout autre caractère que ceux mentionnées précédemment conduiront à l'échec du parsing.
+
+10 c0100c v0101v*
+

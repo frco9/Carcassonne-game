@@ -1,0 +1,128 @@
+#Définition des tuiles par lecture via parseur de ce fichier
+#Une tuile  est définie par un 3 tableaux de sommets et 3 matrices de booléens
+#Les tableaux de sommets sont ici définis par des séquences commençant et finissant par * sur une seule ligne.
+#Ces séquences commencent par le numéro de la tuile puis sont composées de sous séquences délimitées par une lettre (c=champ, r=route, v=ville, m=monaster, e=emblème) et composées d'une suite de quatre chiffres binaires où 1 représente un sommet activé et 0 l'inverse.
+
+#Les matrices de booléens sont ici définies par des séquences commençant et finissant par % sur une seule ligne.
+#Ces séquences commencent par le numéro de la tuile puis sont composées de sous-séquences délimités par une lettre (c=champ, r=route, v=ville, m=monastère) et composées d'une suite de 3 entiers le premier étant le numéro de ligne dans [0,2], le second le numéro de colonne dans [1,3] et le dernier la valeur du booléen (0 ou 1)
+ 
+#Les espaces ne sont pas pris en compte. Par défaut tout les sommets sont désactives si  une séquence n'est pas renseigné, elle sera initialisé à 0000.
+#Les commentaires sont délimites par "dièse" et la fin de la ligne
+
+#Enfin tout autre caractère que ceux mentionnées précédemment conduiront à l'échec du parsing.
+
+
+#####################################
+###Def de la tuile 13 à verifier#####
+#####################################
+
+#Tuile 1
+*0 c1110c v0011v*
+%0 c0 1 1c c1 2 1c v2 3 1v%
+
+#Tuile 2
+*1 c1111c v0001v r1110r*
+%1 c0 3 1c%
+
+#Tuile 3
+*2 c1111c v0101v*
+%2 c0 1 1c c1 2 1c c2 3 1c c0 3 1c%
+
+#Tuile 4
+*3 m1m c1111c*
+%3 c0 1 1c c1 2 1c c2 3 1c c0 3 1c%
+
+#Tuile 5
+*4 m1m c1111c r0010r*
+%4 c0 1 1c c1 2 1c c0 3 1c%
+
+#Tuile 6
+*5 c1111c r1111r*
+
+#Tuile 7
+*6 c1111c r1100r*
+%6 c0 3 1c c2 3 1c r0 1 1r%
+
+#Tuile 8
+*7 c1111c r0101r*
+%7 c0 1 1c c2 3 1c r1 3 1r%
+
+#Tuile 9
+*8 c1111c r1110r*
+%8 c0 3 1c%
+
+#Tuile 10
+*9 v1111v*
+%9 v0 1 1v v1 2 1v v2 3 1v v0 3 1v%
+
+#Tuile 11
+*10 v1011v c0110c*
+%10 v0 3 1v v2 3 1v c1 2 1c%
+
+#Tuile 12
+*11 v1011v c0110c r0100r*
+%11 v0 3 1v v2 3 1v%
+
+#Tuile 13
+*12 v1001v c0111c*
+%12 c1 2 1c c2 3 1c c1 3 1c%
+
+#Tuile 14
+*13 c1111c v0001v*
+%13 c0 1 1c c1 2 1c c2 3 1c c0 3 1c%
+
+#Tuile 15
+*14 c1111c v0001v r1010r*
+%14 c1 2 1c c0 3 1c r0 2 1r%
+
+#Tuile 16
+*15 c1111c v0001v r1100r*
+%15 c2 3 1c c0 3 1c r0 1 1r%
+
+#Tuile 17
+*16 c1111c v0001v r0110r*
+%16 c0 1 1c c0 3 1c r1 2 1r%
+
+#Tuile 18
+*17 c1111c v1010v*
+%17 c0 3 1c c1 2 1c v0 2 1v%
+
+#Tuile 19
+*18 c1110c r1100r v0011v*
+%18 r0 1 1r c0 2 1c v2 3 1v%
+
+#Tuile 20
+*19 v1011v c0110c e1e*
+%19 v0 3 1v v2 3 1v c1 2 1c%
+
+#Tuile 21
+*20 c1111c v1010v e1e*
+%20 c0 3 1c c1 2 1c v0 2 1v%
+
+#Tuile 22
+*21 c1110c r1100r v0011v e1e*
+%21 r0 1 1r c0 2 1c v2 3 1v%
+
+#Tuile 23
+*22 v1011v c0110c r0100r e1e*
+%22 v0 3 1v v2 3 1v%
+
+#Tuile 24
+*23 c1110c v0011v e1e*
+%23 c0 1 1c c1 2 1c v2 3 1v%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

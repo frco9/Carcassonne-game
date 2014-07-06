@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Projet Carcassonne:  Fichier source de /Users/Jeremie/Dropbox/ENSEIRB/Projet_S6/proj1as2-c-873/src/logique/plateau/plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Carcassonne
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de l&#39;implémentation du jeu de société carcassonne</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e0b63bbd3c80cf84a5f50a7c477e60f7.html">logique</a></li><li class="navelem"><a class="el" href="dir_6a21aa90fbc02764204ebb47582b9518.html">plateau</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="plateau_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef Projet_Carcassonne_plateau_h</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define Projet_Carcassonne_plateau_h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">struct </span><a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** <a class="code" href="plateau_8c.html#a458dff6a792b1a5e9e103ed54f9bdd53">initialise_plateau</a>(<span class="keywordtype">int</span> taille_plateau);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a9657eac3706ebe2a88717a5fada7c099" title="Fonction qui test les sommets ville des tuiles autours de la case du plateau de coordonnée (x...">est_compatible_villes</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>* tuile_n, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y,<span class="keywordtype">char</span> position);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a41cef408480e45ec602573385f320ac1" title="Fonction qui test les sommets route des tuiles autours de la case du plateau de coordonnée (x...">est_compatible_routes</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>* tuile_n, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y,<span class="keywordtype">char</span> position);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#abb935af27081877dec0bca9b0abed51b" title="Fonction qui teste les tuiles autours de la case du plateau de coordonnée (x,y) pour s&#39;assurer qu&#39;ell...">tuiles_compatibles</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>* tuile_n, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="plateau_8c.html#af6666c44279f16466658c8815bb1904a" title="Fonction qui teste tout les cas de positionnement de tuiles voisines afin de tester seulement les car...">position_tuiles_voisines</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a06b902070258b9a81f6d96b429c6732b" title="Fonction permettant le placement d&#39;une tuile après verification que son placement est possible...">poser_tuile</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>* tuile_n, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#aa924cb8ebab76f7d9e79179f6ec866f5">free_plateau</a>(<span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>*** plateau, <span class="keywordtype">int</span> taille_plateau);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span><a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>* <a class="code" href="plateau_8c.html#a3912a113773009d3f4ef7d9a4b835425">init_pioche</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a52015ed628aab600df7eee950422eaf7" title="Fonction libérant toute la memoire alouée pour la pioche.">free_pioche</a>(<span class="keyword">struct</span> <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>* <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a4e374991626b1ff4481c7d15f496acfb" title="Fonction determinant si toutes les tuiles on été posées.">est_fin_pioche</a>(<span class="keyword">struct</span> <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>* <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="plateau_8c.html#a703a386027aca9c25f0f3d96c499b4b7" title="Fonction &quot;piochant&quot; une nouvelle tuile.">update_pioche</a>(<span class="keyword">struct</span> <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>* <a class="code" href="structpioche.html" title="Structure gérant la pioche.">pioche</a>, <span class="keyword">struct</span> <a class="code" href="structtuile.html" title="Structure gérant la tuile et sa représentation sous forme de graphe.">tuile</a>* tuiles[]);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Mai 5 2013 23:41:54 pour Projet Carcassonne par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

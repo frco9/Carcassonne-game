@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Projet Carcassonne:  Fichier source de /Users/Jeremie/Dropbox/ENSEIRB/Projet_S6/proj1as2-c-873/src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Carcassonne
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de l&#39;implémentation du jeu de société carcassonne</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SDL/SDL_image.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struct_8h.html">struct.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="jeu_8h.html">graphique/jeu.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="affichage_8h.html">graphique/affichage.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="main_8c.html#a8d34313069fa78a4e0fd376bc01e29bf">   32</a></span>&#160;<span class="preprocessor">#define ECRAN_X 1011</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="main_8c.html#ade5ee1692a8afc42d246bb78478de5ec">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ECRAN_Y 600</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="main_8c.html#a00cab1cc9e001155ac370ac35a186a9b">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TITRE_X 461</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="main_8c.html#a9d4b4dd149a642aa65215e6d25d47888">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TITRE_Y 112</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="main_8c.html#a00543aac532bd72e37a4f8bf0450b0ff">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BLEU_R 8</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="main_8c.html#a7f60df7c31df8d9d40dea10b5f897f49">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BLEU_V 97</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="main_8c.html#a8d496cd76277b0ab70e81be823e5c593">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BLEU_B 189</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">   46</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="Le main contient l&#39;initialisation de SDL; une fois celle-ci faite, une boucle &quot;infinie&quot; est lancée...">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  time_t t;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">/* Intializes random number generator */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  srand((<span class="keywordtype">unsigned</span>) time(&amp;t));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  SDL_Surface *ecran = NULL, *ecran_titre = NULL, *ecran_titre2 = NULL;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  SDL_Rect pos_titre;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  SDL_Event event;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">int</span> en_cours = 1;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> ecran2 = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  SDL_Init(SDL_INIT_VIDEO); </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (SDL_Init(SDL_INIT_VIDEO) == -1)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;ERREUR : SDL non initialisée\n&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      exit(EXIT_FAILURE);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  ecran = SDL_SetVideoMode(<a class="code" href="main_8c.html#a8d34313069fa78a4e0fd376bc01e29bf">ECRAN_X</a>, <a class="code" href="main_8c.html#ade5ee1692a8afc42d246bb78478de5ec">ECRAN_Y</a>, 32, SDL_HWSURFACE);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span> (ecran == NULL)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      fprintf(stderr, <span class="stringliteral">&quot;ERREUR : Mode vidéo non chargé\n&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      exit(EXIT_FAILURE);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  SDL_WM_SetIcon(IMG_Load(<span class="stringliteral">&quot;img/icone.bmp&quot;</span>), NULL);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  SDL_WM_SetCaption(<span class="stringliteral">&quot;Carcassonne&quot;</span>, NULL);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  ecran_titre = IMG_Load(<span class="stringliteral">&quot;img/ecran_titre.png&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  ecran_titre2 = IMG_Load(<span class="stringliteral">&quot;img/ecran_titre2.png&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  pos_titre.x = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  pos_titre.y = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">while</span>(en_cours)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      SDL_WaitEvent(&amp;event);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">switch</span>(event.type)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">case</span> SDL_QUIT:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          en_cours = 0;  <span class="comment">//Quitte le jeu</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">case</span> SDL_KEYDOWN:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          <span class="keywordflow">switch</span>(event.key.keysym.sym)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">case</span> SDLK_ESCAPE:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;              en_cours = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">case</span> SDLK_SPACE:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;              <span class="keywordflow">if</span> (ecran2 == 0)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                ecran2++;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ecran2 == 1)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                  ecran2 = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                  <a class="code" href="jeu_8c.html#ad9f30d36c0a70221acb362452afc38b8">jeu</a>(ecran);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          <span class="keywordflow">break</span>;      </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">if</span> (ecran2 == 0)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        SDL_BlitSurface(ecran_titre, NULL, ecran, &amp;pos_titre);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ecran2 == 1)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        SDL_BlitSurface(ecran_titre2, NULL, ecran, &amp;pos_titre);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      SDL_Flip(ecran);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  SDL_FreeSurface(ecran_titre);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  SDL_FreeSurface(ecran_titre2);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  SDL_Quit();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Mai 5 2013 23:41:54 pour Projet Carcassonne par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

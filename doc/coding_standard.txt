@@ -1,0 +1,19 @@
+------------------------------------------------------------------------------
+	     GROUPE 873 : CODING STANDARDS - PROJET CARCASSONNE
+------------------------------------------------------------------------------
+
+# Commentaires : FRANCAIS
+  écrire les commentaires AVANT la fonction, (dans .h & .c)
+
+# Langue des fonctions : FRANCAIS
+
+# Noms de fonctions & indentations :
+  est_vide()
+  {
+  }
+
+# IFs : - Pas de parenthèses si une seule condition & commande
+      	- Parenthèses sinon
+
+------------------------------------------------------------------------------
+
